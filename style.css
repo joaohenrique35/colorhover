@@ -1,0 +1,90 @@
+.letters_color {
+    color: #202020;
+    transition: color 3s ease;
+    cursor: default;
+    margin-right: -0.35em;
+    padding: 0;
+    display: inline-block;
+   
+
+}
+
+/* Vermelho  → #FF0000
+Laranja   → #FF7F00
+Amarelo   → #FFFF00
+Verde     → #00FF00
+Azul      → #0000FF
+Anil      → #4B0082
+Violeta   → #8B00FF */
+
+.color01 {
+    --cor: #FF0000;
+}
+
+.color02 {
+    --cor: #FF7F00;
+}
+
+.color03 {
+    --cor: #00FF00;
+}
+
+.color04 {
+    --cor: #0000FF;
+}
+
+.color05 {
+    --cor: #4B0082;
+}
+
+.color06 {
+    --cor: #FF0000;
+}
+
+.color07 {
+    --cor: #FF7F00;
+}
+
+.color08 {
+    --cor: #00FF00;
+}
+
+.color09 {
+    --cor: #0000FF;
+    z-index: 100000;
+    position: relative;
+}
+
+/* segue o baile… */
+
+.letters_color:hover {
+    color: var(--cor);
+    transition: color 0s;
+    text-shadow: 1px 1px 15px currentColor;
+
+}
+
+body {
+      background-color: #fff;
+  animation: bgToBlack 5s ease forwards;
+   
+ font-family: "kuhlman-vf", sans-serif;
+font-variation-settings: "SEED" 0, "wdth" 100;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+ 
+}
+
+@keyframes bgToBlack {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #000;
+  }
+}
